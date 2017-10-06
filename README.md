@@ -14,7 +14,7 @@ DRAFT / WiP
 
 - The premises given in the challenge can be tested using curl, a tool like Postman (http://getpostman.com) or any web browser.
 
-1. Launch the web server: ```$ python3 webserver.py```
+1. Clone the repository, access `srv/salt/python_webserver` and launch the web server: `$ python3 webserver.py`
 2. Examples of curl requests:
 ```
 $ curl http://localhost:9000/now
