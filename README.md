@@ -41,7 +41,7 @@ Once inside the repository:
 3. $ `vagrant up`
 4. $ `vagrant ssh saltmaster`
 5. $ `sudo salt ‘*’ state.highstate`
-6. At this point the Nginx VM is fully provisioned and PostgreSQL VM has the system user account created
+6. At this point the _Nginx VM_ is fully provisioned and the _PostgreSQL VM_ has the system user account created
 for Bob and added to the sudo group
 7. For SSH access convenience, minions are configured in the `~/.ssh/config` file for the`vagrant` user
 on `saltmaster`
