@@ -2,7 +2,7 @@ DRAFT / WiP
 
 # DevOps Coding Challenge
 
-#### CHANGELOG
+##### CHANGELOG
 
 - Upgraded to Debian 9 (Salt 2016 Carbon)
 - Fixed ~/.ssh/config: /vagrant/srv/.../bob_rsa -> /srv/.../bob_rsa
@@ -10,11 +10,13 @@ DRAFT / WiP
 - Added python3-pip and installed sqlalchemy
 - Added Bottle.py framework and webserver implementation in `/srv/salt/python_webserver/{bottle.py,webserver.py}`
 
-## Webserver
+## Instructions
+
+### Webserver
 
 The premises given in the challenge can be tested using curl, a tool like Postman (http://getpostman.com) or a web browser.
 
-1. Clone the repository, access `srv/salt/python_webserver` and launch the web server: `$ python3 webserver.py`
+1. With the repository cloned, access `srv/salt/python_webserver` and launch the web server: `$ python3 webserver.py`
 2. Examples of curl requests:
 ```
 $ curl http://localhost:9000/now
@@ -30,12 +32,12 @@ etc.
 
 3. Pending: database reachability check (I need to figure out how to establish a connection)
 
-## Salt cluster
+### Salt cluster
 
 1. The external dependencies are Vagrant and VirtualBox:
 - Vagrant 2: https://www.vagrantup.com/downloads.html
 - VirtualBox 5.1.28: https://www.virtualbox.org/wiki/Downloads
-Once inside the cloned repository:
+Once inside the repository:
 3. $ vagrant up
 4. $ vagrant ssh saltmaster
 5. $ sudo salt ‘*’ state.highstate
