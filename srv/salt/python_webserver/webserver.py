@@ -33,18 +33,18 @@ def later():
 
 @get('/check')
 def check():
-    m = MetaData()
+    ''' m = MetaData()
     t = Table('t', m, Column('x', Integer))
-    s = select([t], for_update="read")
-    
+    s = select([t], for_update="read") '''
+
     #try:
     url = 'postgresql://plugdj:plugdj@localhost:5432/plugdj'
     engine = sqlalchemy.create_engine(url, client_encoding='utf8', echo=True)
-    with engine.begin() as conn:
+    ''' with engine.begin() as conn:
         m.create_all(conn)
-        conn.execute(s)
-        
-    connection = engine.connect() 
+        conn.execute(s) '''
+    connection = engine.connect()
+
     return connection
 
 run(host='localhost', port=9000, debug=True)
