@@ -1,6 +1,6 @@
 DRAFT / WiP
 
-# salt-cluster
+# DevOps Coding Challenge
 
 #### CHANGELOG
 
@@ -10,7 +10,7 @@ DRAFT / WiP
 - Added python3-pip and installed sqlalchemy
 - Added Bottle.py framework and webserver implementation in `/srv/salt/python_webserver/{bottle.py,webserver.py}`
 
-## Testing webserver.py
+## Webserver.py
 
 - The premises given in the challenge can be tested using curl, a tool like Postman (http://getpostman.com) or any web browser.
 
@@ -29,3 +29,19 @@ etc.
 ![webserver](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/webserver.png)
 
 3. Pending: database reachability check (I need to figure out how to establish a connection)
+
+## Salt cluster
+
+1. The external dependencies are Vagrant and VirtualBox:
+- Vagrant 2: https://www.vagrantup.com/downloads.html
+- VirtualBox 5.1.28: https://www.virtualbox.org/wiki/Downloads
+Once inside the cloned repository:
+3. $ vagrant up
+4. $ vagrant ssh saltmaster
+5. $ sudo salt ‘*’ state.highstate
+6. At this point the Nginx VM is fully provisioned and PostgreSQL VM has the system user account created
+for Bob and added to the sudo group
+7. For SSH access convenience, minions are configured in `~/.ssh/config` file for the`vagrant` user
+on `saltmaster`
+8. The password for the SSH key is: bobob
+9. To remove the VMs: $ vagrant halt; vagrant destroy
