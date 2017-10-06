@@ -1,0 +1,2 @@
+.vagrant/
+srv/salt/python_webserver/__pycache__/
