@@ -39,6 +39,7 @@ etc.
 - VirtualBox 5.1.28: https://www.virtualbox.org/wiki/Downloads
 
 Once inside the repository:
+
 3. $ `vagrant up`
 4. $ `vagrant ssh saltmaster`
 5. $ `sudo salt ‘*’ state.highstate`
