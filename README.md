@@ -8,7 +8,7 @@ DRAFT / WiP
 - Fix in config: /vagrant/srv/.../bob_rsa -> /srv/.../bob_rsa
 - Fix in saltmaster.bash: chmod 400... -> sudo chmod 400...
 - Added python3-pip and installed sqlalchemy
-- Added Bottlepy framework and webserver implementation in /srv/salt/python_webserver/{bottle.py,webserver.py}
+- Added Bottlepy framework and webserver implementation in `/srv/salt/python_webserver/{bottle.py,webserver.py}`
 
 ## Testing webserver.py
 
