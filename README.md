@@ -38,12 +38,12 @@ etc.
 - Vagrant 2: https://www.vagrantup.com/downloads.html
 - VirtualBox 5.1.28: https://www.virtualbox.org/wiki/Downloads
 Once inside the repository:
-3. $ vagrant up
-4. $ vagrant ssh saltmaster
-5. $ sudo salt ‘*’ state.highstate
+3. $ `vagrant up`
+4. $ `vagrant ssh saltmaster`
+5. $ `sudo salt ‘*’ state.highstate`
 6. At this point the Nginx VM is fully provisioned and PostgreSQL VM has the system user account created
 for Bob and added to the sudo group
-7. For SSH access convenience, minions are configured in `~/.ssh/config` file for the`vagrant` user
+7. For SSH access convenience, minions are configured in the `~/.ssh/config` file for the`vagrant` user
 on `saltmaster`
 8. The password for the SSH key is: bobob
-9. To remove the VMs: $ vagrant halt; vagrant destroy
+9. To remove the VMs: `$ vagrant halt; vagrant destroy`
