@@ -10,9 +10,9 @@ DRAFT / WiP
 - Added python3-pip and installed sqlalchemy
 - Added Bottle.py framework and webserver implementation in `/srv/salt/python_webserver/{bottle.py,webserver.py}`
 
-## Webserver.py
+## Webserver
 
-- The premises given in the challenge can be tested using curl, a tool like Postman (http://getpostman.com) or any web browser.
+The premises given in the challenge can be tested using curl, a tool like Postman (http://getpostman.com) or a web browser.
 
 1. Clone the repository, access `srv/salt/python_webserver` and launch the web server: `$ python3 webserver.py`
 2. Examples of curl requests:
