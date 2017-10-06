@@ -37,6 +37,7 @@ etc.
 1. The external dependencies are Vagrant and VirtualBox:
 - Vagrant 2: https://www.vagrantup.com/downloads.html
 - VirtualBox 5.1.28: https://www.virtualbox.org/wiki/Downloads
+
 Once inside the repository:
 3. $ `vagrant up`
 4. $ `vagrant ssh saltmaster`
