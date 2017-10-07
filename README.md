@@ -8,7 +8,7 @@ DRAFT / WiP
 - Fixed ~/.ssh/config: /vagrant/srv/.../bob_rsa **->** /srv/.../bob_rsa
 - Fixed saltmaster.bash: chmod 400... **->** sudo chmod 400...
 - Added python3-pip and installed sqlalchemy
-- Added Bottle.py framework for the webserver implementation in [srv/salt/python_webserver](https://github.com/i90rr/salt-cluster/tree/master/srv/salt/python_webserver)
+- Added `bottle.py` (framework) for the webserver implementation in [srv/salt/python_webserver](https://github.com/i90rr/salt-cluster/tree/master/srv/salt/python_webserver)
 
 ## Instructions
 
