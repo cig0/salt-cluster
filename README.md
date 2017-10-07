@@ -5,8 +5,8 @@ DRAFT / WiP
 ##### CHANGELOG
 
 - Upgraded to Debian 9 (Salt 2016 Carbon)
-- Fixed ~/.ssh/config: /vagrant/srv/.../bob_rsa -> /srv/.../bob_rsa
-- Fixed saltmaster.bash: chmod 400... -> sudo chmod 400...
+- Fixed ~/.ssh/config: /vagrant/srv/.../bob_rsa **->** /srv/.../bob_rsa
+- Fixed saltmaster.bash: chmod 400... **->** sudo chmod 400...
 - Added python3-pip and installed sqlalchemy
 - Added Bottle.py framework and webserver implementation in [srv/salt/python_webserver](https://github.com/i90rr/salt-cluster/tree/master/srv/salt/python_webserver)
 
