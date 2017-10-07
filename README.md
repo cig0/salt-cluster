@@ -26,6 +26,7 @@ $ curl -X POST -F nam=wrongForm http://localhost:9000/later
 $ curl -X POST -F name=foo http://localhost:9000/later
 $ curl -X POST -F name=foo.bar http://localhost:9000/later
 $ curl -X POST -F name= http://localhost:9000/later
+$ curl -X PUT -F name= http://localhost:9000/later
 etc.
 ```
 (Click to enlarge)
