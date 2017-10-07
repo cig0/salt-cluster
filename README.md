@@ -48,5 +48,5 @@ etc.
 (Click to enlarge)
 ![webserver](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/webserver.png)
 
-3. Pending: database reachability check (I need to figure out how to establish a connection)
+3. PENDING: database reachability check (I need to figure out how to establish a connection)
 
