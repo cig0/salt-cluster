@@ -20,7 +20,7 @@ DRAFT / WiP
 3. `$ vagrant up`
 4. `$ vagrant ssh saltmaster`
 5. `$ sudo salt ‘*’ state.highstate`
-6. At this point the _Nginx VM_ is fully provisioned and the _PostgreSQL VM_ has the system user account created
+6. At this point the _Nginx VM_ is fully provisioned and the _Postgres VM_ has the system user account created
 for Bob and added him to the sudo group
 7. For SSH access convenience, minions are configured in the `~/.ssh/config` file for the`vagrant` user
 on `saltmaster`
@@ -31,7 +31,7 @@ on `saltmaster`
 
 The premises given in the challenge can be tested using curl, [Postman](http://www.getpostman.com) (or any tool alike) or a web browser.
 
-1. Inside the local cloned repository (or within _Salt master VM_), go to `srv/salt/python_webserver/` and launch the web server: `$ python3 webserver.py`
+1. Access _Postgres VM_ (either via `$ ssh postgres` from `saltmaster` or `$ vagrant ssh postgres`), go to `srv/salt/python_webserver/` and launch the web server: `$ python3 webserver.py`
 2. Examples of curl requests:
 ```
 $ curl http://localhost:9000/now
