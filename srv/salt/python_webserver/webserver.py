@@ -2,9 +2,9 @@
 
 import datetime
 import json
+import psycopg2
+import sys
 from bottle import error, get, post, response, request, run
-from sqlalchemy import *
-
 
 @error(404)
 def custom404(error):
@@ -37,12 +37,18 @@ def later():
 
 @get('/check')
 def check():
-    #try:
-    url = 'postgresql://plugdj:plugdj@localhost:5432/plugdj'
-    engine = create_engine(url, client_encoding='utf8', echo=True)
-    
-    connection = engine.connect()
-
-    return connection
-
+    con = None
+    try:
+        con = psycopg2.connect("dbname='plugdj' user='plugdj' password='plugdj'")
+        cur = con.cursor()
+        cur.execute('SELECT version()')
+        #print(cur.fetchone())
+    except psycopg2.DatabaseError as e:
+        response.status = 403
+        #print('Error %s' % e)
+        return
+    finally:
+        if con:
+            con.close()
+            
 run(host='localhost', port=9000, debug=True)
