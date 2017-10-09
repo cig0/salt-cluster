@@ -5,6 +5,11 @@ import json
 from bottle import error, get, post, response, request, run
 from sqlalchemy import *
 
+
+@error(404)
+def custom404(error):
+    return 'Wrong URL, accepted endpoints are: /now, /later, /check'
+
 @error(405)
 def custom405(error):
     response.status = 401
@@ -18,7 +23,6 @@ def now():
 def later():
     if request.method == 'POST' and 'name' in request.POST:
         name = request.forms.get("name")
-
         if name == '':
             response.status = 402
             return json.dumps({"error": "invalid name", "payload": name})
@@ -33,16 +37,10 @@ def later():
 
 @get('/check')
 def check():
-    ''' m = MetaData()
-    t = Table('t', m, Column('x', Integer))
-    s = select([t], for_update="read") '''
-
     #try:
     url = 'postgresql://plugdj:plugdj@localhost:5432/plugdj'
-    engine = sqlalchemy.create_engine(url, client_encoding='utf8', echo=True)
-    ''' with engine.begin() as conn:
-        m.create_all(conn)
-        conn.execute(s) '''
+    engine = create_engine(url, client_encoding='utf8', echo=True)
+    
     connection = engine.connect()
 
     return connection
