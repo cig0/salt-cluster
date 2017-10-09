@@ -3,10 +3,7 @@
 echo "Installing salt-master..."
 set -ex
 sudo apt-get update
-sudo apt-get -y install mg tmux python3-pip salt-master
-
-# pip3 install sqlalchemy
-python3 -m pip install sqlalchemy
+sudo apt-get -y install mg tmux salt-master
 
 # Fix Bob's private key permissions due to cloning the repo
 sudo chmod 400 /srv/salt/ssh_keys/bob_rsa
