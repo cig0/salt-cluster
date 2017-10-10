@@ -20,6 +20,7 @@ on `saltmaster`
 2. Finally, the full stack can be accessed from the host computer, from the Salt master and from the minions:
 ```
 Example requests
+----------------
 
 $ curl http://localhost:8080/now
 $ curl http://localhost:8080/later
