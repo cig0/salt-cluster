@@ -3,7 +3,9 @@
 # Begin provisioning
 sudo salt '*' state.highstate
 
-python3 /srv/salt/python_webserver/webserver.py &
+# An ugly workaround given my skill shortage with Salt...
+sudo salt 'nginx' cmd.run 'sudo nginx -s reload'
+
 echo -e "\nReady!\n"
 echo "Try this from your host:"
 echo "$ curl http://localhost:8080/now
@@ -19,3 +21,6 @@ $ curl http://localhost:8080/check
 
 Alternatively, you can use www.getpostman.com
 "
+
+# Launch the webserver
+python3 /srv/salt/python_webserver/webserver.py

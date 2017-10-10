@@ -42,11 +42,13 @@ def check():
         con = psycopg2.connect("host='192.168.0.7' dbname='plugdj' user='plugdj' password='plugdj'")
         cur = con.cursor()
         cur.execute('SELECT version()')
+        response.status = 200
         #print(cur.fetchone())
+        return response.status
     except psycopg2.DatabaseError as e:
         response.status = 403
         #print('Error %s' % e)
-        return
+        return response.status
     finally:
         if con:
             con.close()
