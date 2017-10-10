@@ -16,9 +16,8 @@ on `saltmaster`
 
 ### Hands-on
 
-1. The premises given in the challenge can be tested using curl, [Postman](http://www.getpostman.com) (or any tool alike) or a web browser.
-
-2. Finally, the full stack can be accessed from the host, from the Salt master and from the minions:
+1. The premises given in the challenge can be tested using curl, a tool like [Postman](http://www.getpostman.com) or a web browser.
+2. Finally, the full stack can be accessed from the host computer, from the Salt master and from the minions:
 ```
 Sending request from the host or the Salt master:
 
