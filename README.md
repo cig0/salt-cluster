@@ -18,10 +18,12 @@ on `saltmaster`
 
 ### Hands-on
 
-The premises given in the challenge can be tested using curl, [Postman](http://www.getpostman.com) (or any tool alike) or a web browser.
+1. The premises given in the challenge can be tested using curl, [Postman](http://www.getpostman.com) (or any tool alike) or a web browser.
 
-1. Once the minions are provisioned and the Python webserver is running the setup can be accessed via localhost, like this:
+2. Finally, the full stack can be accessed from the host, from the Salt master and from the minions:
 ```
+Sending request from the host or the Salt master:
+
 $ curl http://localhost:8080/now
 $ curl http://localhost:8080/later
 $ curl -X INVALID_METHOD http://localhost:8080/now
@@ -34,7 +36,6 @@ $ curl -X PUT -F foo=bar http://localhost:8080/check
 $ curl http://localhost:8080/check
 etc.
 ```
-2. [Direct link](https://github.com/i90rr/salt-cluster/blob/master/srv/salt/python_webserver/webserver.py) to the Python webserver (second part of the challenge)
 
 ## Click to enlarge
 
