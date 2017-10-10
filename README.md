@@ -1,4 +1,4 @@
-# DevOps Coding Challenge - Instructions
+# DevOps Coding Challenge - Environment setup instructions
 
 ### Setting up the environment
 
