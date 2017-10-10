@@ -39,7 +39,7 @@ def later():
 def check():
     con = None
     try:
-        con = psycopg2.connect("dbname='plugdj' user='plugdj' password='plugdj'")
+        con = psycopg2.connect("host='192.168.0.7' dbname='plugdj' user='plugdj' password='plugdj'")
         cur = con.cursor()
         cur.execute('SELECT version()')
         #print(cur.fetchone())
@@ -51,4 +51,4 @@ def check():
         if con:
             con.close()
             
-run(host='localhost', port=9000, debug=True)
+run(host='0.0.0.0', port=9000, debug=True)

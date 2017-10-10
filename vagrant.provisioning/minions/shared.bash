@@ -5,7 +5,7 @@ _hostname=$(hostname)
 set -ex
 echo "Installing salt-minion on host: $_hostname..."
 sudo apt-get update
-sudo apt-get -y install mg tmux salt-minion
+sudo apt-get -y install mg tmux salt-minion curl
 
 echo -e "\n# Salt master\n192.168.0.5     salt" | sudo tee -a /etc/hosts > /dev/null
 echo "Starting salt-minion in host: $_hostname..."
