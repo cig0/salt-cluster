@@ -34,7 +34,7 @@ $ curl -X PUT -F foo=bar http://localhost:8080/check
 $ curl http://localhost:8080/check
 ```
 
-## Click to enlarge
+_Click to enlarge_
 
 ![webserver](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/webserver.png)
 
