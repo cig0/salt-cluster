@@ -1,8 +1,6 @@
 DRAFT / WiP
 
-# DevOps Coding Challenge
-
-## Instructions
+# DevOps Coding Challenge - Instructions
 
 ### Setting up the environment
 
