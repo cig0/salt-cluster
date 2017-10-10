@@ -40,3 +40,7 @@ etc.
 ![webserver](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/webserver.png)
 
 ![UpAndRunning](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/dcc.png)
+
+## Flow chart
+
+![flowchart](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/Flow%20chart.png)
