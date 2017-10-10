@@ -39,6 +39,7 @@ etc.
 ![webserver](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/webserver.png)
 
 ![UpAndRunning](https://raw.githubusercontent.com/i90rr/salt-cluster/master/extras/dcc.png)
+**Note:** the HTTP server is now listening on the internal IP only. The above screenshot belongs to an earlier commit.
 
 ## Flow chart
 
