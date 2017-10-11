@@ -8,7 +8,7 @@
 2. Clone this repository
 3. `$ vagrant up`; `$ vagrant ssh saltmaster`
 5. Once inside the Salt master: `$ /vagrant/provision_minions_and_launch_webserver.bash`
-6. At this point the environment should be fully provisioned and the HTTP server ready to be accessed
+6. At this point the environment should be fully provisioned with the HTTP server ready to be accessed
 7. For SSH access convenience, minions are configured in the `~/.ssh/config` file for the`vagrant` user
 on `saltmaster`
 8. The password for the SSH key is: bobob
