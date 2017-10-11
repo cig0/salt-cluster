@@ -32,6 +32,7 @@ $ curl -X POST -F name= http://localhost:8080/later
 $ curl -X PUT -F name= http://localhost:8080/later
 $ curl -X PUT -F foo=bar http://localhost:8080/check
 $ curl http://localhost:8080/check
+$ curl -X POST -F name="This string is not valid!" http://localhost:8080/later
 ```
 
 _Click/tap to enlarge_
