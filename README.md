@@ -19,7 +19,7 @@ on `saltmaster`
 1. The premises given in the challenge can be tested using curl, a tool like [Postman](http://www.getpostman.com) or a web browser.
 2. Finally, the HTTP webserver can be accessed from the host computer (by proxing through Nginx as requested), from the Salt master and from the minions.
 ```
-Example requests
+Example requests (from the host computer)
 ----------------
 
 $ curl http://localhost:8080/now
